@@ -1,0 +1,40 @@
+body {
+  background-color: darkslategray;
+}
+
+#address {
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 37%;
+  border-radius: 7px;
+  background-color: darkgray;
+}
+
+#hint {
+  position: absolute;
+  width: 30%;
+  top: 53%;
+  left: 37%;
+  z-index: 1;
+  opacity: 1;
+  border-radius: 5px;
+  background-color: darkgray;
+  display: none;
+}
+
+#addressList {
+  margin: 1px;
+}
+
+li {
+  list-style-type: none;
+}
+/* .test {
+  position: absolute;
+  width: 30%;
+  top: 53%;
+  left: 37%;
+  opacity: 1;
+  background-color: #00ffff;
+} */
