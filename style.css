@@ -13,7 +13,7 @@ body {
 
 #hint {
   position: absolute;
-  width: 30%;
+  width: 25.7%;
   top: 53%;
   left: 37%;
   z-index: 1;
@@ -21,14 +21,20 @@ body {
   border-radius: 5px;
   background-color: darkgray;
   display: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
 
-#addressList {
-  margin: 1px;
+#addressesList {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
 
 li {
   list-style-type: none;
+  margin: 10px;
 }
 /* .test {
   position: absolute;

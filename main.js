@@ -1,7 +1,9 @@
 $(document).ready(function () {
   $("#address")
     .on("focusin", function () {
-      $("#hint").fadeIn(300);
+      if ($(this).val() != "") {
+        $("#hint").fadeIn(300);
+      }
     })
     .on("focusout", function () {
       $("#hint").fadeOut(300);
@@ -28,7 +30,13 @@ $(document).ready(function () {
   }
 
   $("#address").on("keyup", function () {
-    if ($("this").text() != " ") {
+    if ($(this).val() == "") {
+      $("#hint").fadeOut(300);
+    }
+    if ($(this).val() != "") {
+      $("#hint").fadeIn(300);
+    }
+    if ($("this").val() != " ") {
       pullAddresses.length = 0;
       var url =
         "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address";
